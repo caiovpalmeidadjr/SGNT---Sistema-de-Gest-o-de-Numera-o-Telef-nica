@@ -1,0 +1,55 @@
+package br.com.sgnt.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Funcionario {
+	
+	//referenciando que matricula é um id na tabela funcionario e que o id da mesma será gerado automaticamente
+	@Id @GeneratedValue
+	private Integer matricula;
+	
+	@Column (name="NOME_FUNC")
+	private String nome;
+	
+	@Column (name="TELEFONE_FUNC")
+	private String telefone;
+	
+	@Column (name="EMAIL_FUNC")
+	private String email;
+
+	public Integer getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(Integer matricula) {
+		this.matricula = matricula;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+}

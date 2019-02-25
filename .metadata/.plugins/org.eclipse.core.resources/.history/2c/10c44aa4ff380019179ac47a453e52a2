@@ -1,0 +1,10 @@
+package br.com.sgnt.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="TB_MUNICIPIO")
+public class Municipio {
+
+}

@@ -1,0 +1,11 @@
+package br.com.sgnt.model;
+
+import javax.persistence.Id;
+
+public class Cliente {
+	
+	@Id
+	private Integer idCliente;
+	
+	
+}

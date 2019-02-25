@@ -1,0 +1,25 @@
+package br.com.sgnt.model;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="TB_MUNICIPIO")
+public class Municipio {
+
+	private Integer idMunicipio;
+	
+	
+	private String siglaMunicipio;
+	
+	
+	private String nomeMunicipio;
+	
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name="ID_ARLC", insertable=true, updatable=true, referencedColumnName="COD_TIPO_MOVIMENTO_ECOFIN_ID")
+	private AreaLocal areaLocal;
+	
+}

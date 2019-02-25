@@ -1,0 +1,9 @@
+package br.com.sgnt.model;
+
+public class Funcionario {
+
+	private Integer matricula;
+	private String nome;
+	private String telefone;
+	private String email;
+}
